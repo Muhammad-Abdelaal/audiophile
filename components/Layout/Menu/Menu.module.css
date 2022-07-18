@@ -1,0 +1,15 @@
+
+.menu {
+    height: 100vh;
+    position: fixed;
+    z-index: 101;
+    top: 100px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+}
+
+@media(min-width:768px) {
+    .menu {
+        height: 300px;
+    }
+}

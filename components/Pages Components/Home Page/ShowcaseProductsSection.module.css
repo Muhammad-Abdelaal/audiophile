@@ -1,0 +1,195 @@
+
+
+.showcase-section-container {
+    width: 85%;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.zx9-speaker-container {
+    margin-bottom: 40px;
+    width: 100%;
+    height: 90vh;
+    background: #D87D4A;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.zx9-speaker__ring-image-container {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.zx9-speaker__ring {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , -20%);
+    width:170%;
+    max-width: 750px;
+}
+.zx9-speaker__image {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    z-index: 1;
+    width: 50%;
+    max-width: 220px;
+}
+.zx9-speaker__details-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.zx9-speaker__title {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.zx9-speaker__title + p {
+    color: white;
+    margin-bottom: 20px;
+    font: 400;
+    text-align:center;
+}
+.zx7-speaker-container {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    background-image: url('../../../assets/home/mobile/image-speaker-zx7.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 364px;
+}
+.zx7-speaker__title {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.yx1-earphones__image {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    background-image: url('../../../assets/home/desktop/image-earphones-yx1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px ;
+}
+.yx1-earphones__see-product__container {
+    border-radius: 12px;
+    padding-left: 5%;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F1F1F1;
+    margin-bottom: 40px;
+}
+.yx1-earphones__title {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .zx9-speaker-container {
+        margin-bottom: 40px;
+        width: 100%;
+        height: 75vh;
+        border-radius: 7px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .zx9-speaker__ring-image-container {
+        position: relative;
+        width: 60%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .zx9-speaker__details-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    .zx9-speaker__title {
+        width: min-content;
+        font-size: 50px;
+    }
+    .zx9-speaker__title + p {
+        text-align:left;
+        font-size: 22px;
+        width: 90%;
+    }
+    .zx9-speaker__ring {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50% , -28%);
+        width:220%;
+        max-width: 1000px;
+    }
+    .zx9-speaker__image {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        transform: translate(-50%);
+        z-index: 1;
+        width: 55%;
+        min-width: 270px ;
+        max-width: 1000px;
+    }
+    .yx1-earphones-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .yx1-earphones__image {
+        width: 45%;
+        height: 300px;
+        margin-right: 20px;
+    }
+    .yx1-earphones__see-product__container {
+        height: 300px;
+    }
+    .zx7-speaker-container {
+        background-image: url('../../../assets/home/tablet/image-speaker-zx7.jpg');
+    }
+    
+    
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .zx9-speaker__ring {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50% , -15%);
+        width:220%;
+        max-width: 1000px;
+    }
+    .zx7-speaker-container {
+        background-image: url('../../../assets/home/desktop/image-speaker-zx7.jpg');
+    }
+}
+ 

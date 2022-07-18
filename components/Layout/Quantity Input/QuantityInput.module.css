@@ -1,0 +1,33 @@
+.product-quantity-container {
+    width: 30%;
+    max-width: 118px;
+    display: flex;
+    align-items: center;
+    background: #F1F1F1;
+}
+.quantity-plus {
+    cursor: pointer;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.279);
+    background: #F1F1F1;
+    border: none;
+    height: 100%;
+    width:30%;
+}
+.quantity-minus {
+    cursor: pointer;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.279);
+    background: #F1F1F1;
+    border: none;
+    height: 100%;
+    width:30%;
+}
+.quantity-plus:hover , .quantity-minus:hover{
+    color: rgb(216, 125, 74) ;
+}
+.quantity-number {
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+}

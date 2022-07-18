@@ -1,0 +1,127 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  background: #191919;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: auto auto;
+  max-width: 1128px;
+  width: 85%;
+  height: 100%;
+  border-bottom: solid 1px rgba(204, 204, 204, 0.203);
+}
+.navs {
+  display: none;
+}
+.cart-icon__container {
+  cursor: pointer;
+  position: relative;
+}
+.cart-icon {
+  font-size: 20px;
+}
+.cart-icon__container span {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background:rgb(216, 125, 74) ;
+  border-radius: 50%;
+  min-width: 22px; 
+  min-height: 22px;
+  display: grid;
+  place-content: center;
+}
+.burger-btn-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+  }
+.burger-btn {
+  width: 27px;
+  height: 1.5px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.burger-btn::before,
+.burger-btn::after {
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 1.5px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.burger-btn::before {
+  transform: translateY(-7px);
+}
+.burger-btn::after {
+  transform: translateY(7px);
+}
+
+/*  ANIMATION  */
+
+.burger-btn-container.open .burger-btn {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.burger-btn-container.open .burger-btn::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.burger-btn-container.open .burger-btn::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+/*******/
+  
+.logo {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+@media (min-width: 992px) {
+  .burger-btn-container {
+    display: none;
+  }
+  .navs {
+    display: flex;
+    justify-content: space-between;
+    width: 40% ;
+    min-width: 350px;
+  }
+  .navs-item {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.3s ease 0s;
+    background-image: linear-gradient(to right, rgb(216, 125, 74) 0%, rgb(216, 125, 74) 50%, rgb(255, 255, 255) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100% center;
+  }
+  .navs-item:hover {
+    transition: all 0.3s ease 0s;
+    background-position: 0% center;
+  }
+  
+}
